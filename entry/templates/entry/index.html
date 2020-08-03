@@ -1,0 +1,54 @@
+{%extends 'entry/base.html'%} {%load static%} {%block content%}
+<div class="container-section">
+  <div class="row display_form">
+    <div class="col s12 m8 offset-m2 l4 offset-l4">
+      <div class="hoverable">
+        <div class="card purple lighten-3">
+          <div class="card-content white-text center">
+            {%if user.is_authenticated%} {%else%}
+            <span class="card-title center-align">Join Today</span>
+            {%endif%}
+            <img
+              class="responsive-img"
+              src="{% static 'entry/banner.png'%}"
+              alt="Not available!"
+            />
+            {%if user.is_authenticated%}
+            <p>
+              Continue, where you left off from your previous login...
+            </p>
+            {%else%}
+            <p>
+              <i
+                >Everything happens for a reason and that reason is usually
+                PHYSICS...</i
+              >
+            </p>
+            {%endif%}
+          </div>
+          <div class="card-action">
+            {%if user.is_authenticated%}
+            <a
+              class="waves-effect waves-light purple darken-4 btn"
+              href="{%url 'lol-blog'%}"
+              >Continue</a
+            >
+            {%else%}
+            <a
+              class="waves-effect waves-light purple darken-4 btn"
+              href="{%url 'lol-signup'%}"
+              >Sign Up</a
+            >
+            <a
+              class="waves-effect waves-light purple darken-4 btn"
+              href="{%url 'lol-login'%}"
+              >Log In</a
+            >
+            {%endif%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{%endblock%}

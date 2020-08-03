@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #6441a5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.brand-logo {
+  font-family: "Lato", sans-serif;
+  font-size: 3em;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+
+.nav-wrapper li a {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+
+nav ul a:hover {
+  background-color: rgb(255, 255, 255, 0.1) !important;
+}
+
+ul li a {
+  font-size: 18px;
+  position: relative;
+}
+
+ul li a:hover:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  padding: 2px;
+  height: 5px;
+}
+
+.display_form {
+  margin-top: 2rem;
+}
+
+.card .card-title {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.card .card-content p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3em;
+  color: #455a64;
+  position: relative;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  flex: 1 0 auto;
+}
+
+.page-footer,
+.footer-copyright {
+  background: #6441a5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: ubuntu;
+  font-weight: bold;
+}
+
+.card-panel {
+  margin-top: 2rem;
+  font-family: lato;
+  font-size: 15px;
+}
+
+.user-heading {
+  font-family: "lato";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-image {
+  margin-top: 1em;
+}
+
+.message-card {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-weight: bold;
+}
+
+.closure {
+  transform: translateY(-100vh);
+}
+
+.sub-heading {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  font-weight: bolder;
+  color: #000;
+}
+
+.divider {
+  margin-top: 1em;
+}
+
+.disabled {
+  background-color: gray;
+}
+
+.down-section {
+  margin-top: 1em;
+  font-family: "lato";
+  font-size: 1.3em;
+}
+
+.down-section a {
+  font-weight: bold;
+  color: #4a148c;
+}
+
+.logout_msg {
+  position: absolute;
+  bottom: 3em;
+  right: 10px;
+  width: 250px;
+  height: 75px;
+  border-radius: 5px;
+  color: aqua;
+  font-family: ubuntu;
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ce93d8;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4a148c;
+  border-radius: 3px;
+}
